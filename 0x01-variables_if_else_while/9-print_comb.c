@@ -13,17 +13,12 @@ int main(void)
 
 	for (c = '0';  c <= '9'; c++)
 	{
-		if (c == '9')
-		{
-			putchar(c);
-		}
-		else{
-			putchar(c);
-			putchar(',');
-			putchar(' ');
-		}
-
-			return (0);
+		putchar(c);
+		putchar(',');
+		putchar(' ');
 	}
+	putchar('9');
+
+	return (0);
 }
 
