@@ -13,14 +13,18 @@ int main(void)
 
 	for (c = '0';  c <= '9'; c++)
 	{
-		putchar(c);
-		putchar(',');
-		putchar(' ');
 		if (c == '9')
+		{
 			putchar(c);
+		}
+		else
+		{
+			putchar(c);
+			putchar(',');
+			putchar(' ');
+		}
 
+			return (0);
 	}
-
-	return (0);
 }
 
