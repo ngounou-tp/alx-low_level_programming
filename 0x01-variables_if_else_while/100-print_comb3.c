@@ -4,7 +4,7 @@
 
 /**
  * main - Entry point
- *   
+ *
  * Return: Always 0 (Success)
  */
 
@@ -17,7 +17,7 @@ int main(void)
 		for (p = d + 1; p <= '9'; p++)
 		{
 			if (p != d)
-			{ 
+			{
 				putchar(d);
 				putchar(p);
 				if (d == '8' && p == '9')
@@ -27,6 +27,7 @@ int main(void)
 			}
 		}
 	}
+	putchar('\n');
 
 	return (0);
 }
