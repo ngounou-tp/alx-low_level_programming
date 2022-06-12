@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include "main.h"
 
 /**
@@ -20,20 +19,20 @@ void times_table(void)
 		{
 			if (s == 0)
 			{
-				printf("%d", 0);
+				_putchar('0');
 		       		_putchar(',');
 				 _putchar(' ');
 			}
 			else
 				if (s == 1)
 				{
-					printf("%d", d);
+					_putchar(s);
 					 _putchar(',');
 					  _putchar(' ');
 				}
 				else
 				{
-					printf("%d", t);
+					_putchar(t);
 					t = t + s;
 					 _putchar(',');
 					  _putchar(' ');
@@ -41,7 +40,7 @@ void times_table(void)
 			if (d == 9)
 			{
 				t = s * 9;
-				printf("%d", t);
+				_putchar(t);
 			}
 		}
 		_putchar('\n');
