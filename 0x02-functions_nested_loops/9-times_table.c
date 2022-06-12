@@ -18,15 +18,30 @@ void times_table(void)
 		for (d = 0; d <= 9; d++)
 		{
 			if (s == 0)
-				_putchar('0');
+			{
+				printf("%d", 0);
+		       		_putchar(',');
+				 _putchar(' ');
+			}
 			else
 				if (s == 1)
-					_putchar(d);
+				{
+					printf("%d", d);
+					 _putchar(',');
+					  _putchar(' ');
+				}
 				else
 				{
-					_putchar(t);
+					printf("%d", t);
 					t = t + s;
+					 _putchar(',');
+					  _putchar(' ');
 				}
+			if (d == 9)
+			{
+				t = s * 9;
+				printf("%d", t);
+			}
 		}
 		_putchar('\n');
 	}
