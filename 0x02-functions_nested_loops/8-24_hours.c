@@ -3,14 +3,14 @@
 /**
  * jack_bauer - print every minute of the day
  *
- * Description: print every minute of the day using the _putchar function nd a for loop
+ * Description: print every minute of the day 
  * Return: void
  */
 
 void jack_bauer(void)
 {
 	int r;
-       	int s;
+	int s;
 
 	for (r = 0; r < 24; r++)
 	{
