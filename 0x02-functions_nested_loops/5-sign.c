@@ -6,7 +6,7 @@
  * Description: function uses _putchar function to print signs
  * Return: 1 if positif 0if equal to zero or -1 if negatif
  */
- 
+
 int print_sign(int n)
 {
 	if (n > 0)
@@ -15,14 +15,14 @@ int print_sign(int n)
 
 		return (1);
 	}
-	else 
+	else
 		if (n == 0)
 		{
 			_putchar('0');
 
 			return (0);
 		}
-		else 
+		else
 		{
 			_putchar('-');
 
