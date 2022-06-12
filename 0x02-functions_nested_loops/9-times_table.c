@@ -33,8 +33,8 @@ void times_table(void)
 			else
 			{
 				_putchar((t / 10) + '0');
-				_putchar((n % 10) + '0');
-				if (j == 9)
+				_putchar((t % 10) + '0');
+				if (d == 9)
 					continue;
 				_putchar(',');
 				_putchar(' ');
