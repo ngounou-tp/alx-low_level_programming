@@ -2,9 +2,9 @@
 
 /**
  * _islower -check if a character is in lower case
- * Input :an interger
- *
- * Retur: if true return 1 and 0 if false
+ * @c: An input character
+ * Description: function uses _putchar function to print
+ * Return: if true return 1 and 0 if false
  */
 
 int _islower(int c)
