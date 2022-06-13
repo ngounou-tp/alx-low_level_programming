@@ -18,7 +18,7 @@ void print_times_table(int n)
 				putformat(i * j);
 			_putchar('\n');								}
 	}
-
+}
 /**
  * putformat - formatted characters to output
  * @n: number to format
