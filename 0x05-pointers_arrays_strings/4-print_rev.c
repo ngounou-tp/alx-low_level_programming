@@ -19,11 +19,11 @@ void print_rev(char *s)
 	i = 0;
 	while (c != '\0')
 	{
-		i++;
+		i++;i
 		c = s[i];
 	}
 
-	for (j = i; j >= 0; --j)
+	for (j = i - 1; j >= 0; --j)
 	{
 		a = s[j];
 		_putchar(a);
