@@ -18,13 +18,8 @@ void puts2(char *s)
 		i++;
 		c = s[i];
 	}
-	j = 0;
-	while (j < i - 1)
-	{
-		c = s[j];
-		_putchar(c);
-		j = j + 2;
-	}
+	for (j = 0; j < i; j += 2)
+		_putchar(s[j]);
 	_putchar('\n');
 }
 		 
