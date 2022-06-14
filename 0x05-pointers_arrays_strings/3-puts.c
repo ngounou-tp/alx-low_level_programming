@@ -2,7 +2,7 @@
 
 /**
  *  _puts - tested by main.c file
- *  @s: pointer to a string
+ *  @str: pointer to a string
  *  Description: prints a string
  *  Return: nothing
  */
@@ -12,13 +12,13 @@ void _puts(char *str)
 	char c;
 	int i;
 
-	c = s[0];
+	c = str[0];
 	i = 0;
 
 	while (c != '\0')
 	{
 		_putchar(c);
 		i++;
-		c = s[i];
+		c = str[i];
 	}
 }
