@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * puts_half - tested by main.c file
