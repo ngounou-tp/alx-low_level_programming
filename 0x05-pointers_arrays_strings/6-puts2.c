@@ -22,4 +22,4 @@ void puts2(char *s)
 		_putchar(s[j]);
 	_putchar('\n');
 }
-		 
+
