@@ -23,11 +23,10 @@ void print_rev(char *s)
 		c = s[i];
 	}
 
-	for (j = i; j > 0; j--)
+	for (j = i; j >= 0; j--)
 	{
 		a = s[j];
 		_putchar(a);
 	}
-	_putchar('\n');
 }
 
