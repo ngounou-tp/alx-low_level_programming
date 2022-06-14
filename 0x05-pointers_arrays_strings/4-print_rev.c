@@ -22,7 +22,7 @@ void print_rev(char *s)
 		i++;
 		c = s[i];
 	}
-	a = s[i];
+	a = s[i + 1];
 
 	for (j = i; j >= 0; j--)
 	{
