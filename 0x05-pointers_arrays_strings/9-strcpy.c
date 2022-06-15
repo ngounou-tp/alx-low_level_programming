@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * _strcpy - to be tested by main.c
  * @dest: array of characters
@@ -11,7 +9,7 @@ char *_strcpy(char *dest, char *src)
 {
 	char *c = dest;
 
-	while (*src != NULL)
+	while (*src)
 		*dest++ = *src++;
 	return (c);
 }
