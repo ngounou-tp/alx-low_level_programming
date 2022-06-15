@@ -7,7 +7,7 @@
  * Description: copies the first string to the second string
  * Return: pointer to the first string
  */
-char *_strcpy(char *dest, char *src)
+char* _strcpy(char *dest, char *src)
 {
 	char *c = dest;
 
