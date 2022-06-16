@@ -8,14 +8,18 @@
  */
 int _isdigit(int c)
 {
-	int j, k =0;
+	int k =0;
+	char n;
 
-	for (j = 0; j <= 9; j++)
+	for (n = '0'; n <= '9'; n++)
 	{
-		if (c == j)
+		if (c == n)
+		{
 			k = 1;
+			break;
+		}
 	}
 
 	return (k);
 }
-		
+
