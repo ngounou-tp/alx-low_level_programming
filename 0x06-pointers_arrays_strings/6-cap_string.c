@@ -5,7 +5,7 @@
  * @s: an input string to encode
  * Return: An encode string
  */
-char *leet(char *s)
+char *cap_string(char *)
 {
 	int i = 0, j;
 	char subs[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'},
