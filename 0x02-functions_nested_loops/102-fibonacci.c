@@ -10,11 +10,11 @@ int main(void)
 	int i = 0, j = 1, n = 0;
 
 	printf("%d", i);
-	_putchar(',');
-	_putchar(' ');
-	_putchar("%d", j);
-	_putchar(',');
-	_putchar(' ');
+	putchar(',');
+	putchar(' ');
+	putchar("%d", j);
+	putchar(',');
+	putchar(' ');
 	while (n >= 2 && n <= 50)
 	{
 		n = i + j;
