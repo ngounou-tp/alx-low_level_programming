@@ -12,7 +12,7 @@ int main(void)
 	printf("%d", i);
 	putchar(',');
 	putchar(' ');
-	putchar("%d", j);
+	printf("%d", j);
 	putchar(',');
 	putchar(' ');
 	while (n >= 2 && n <= 50)
