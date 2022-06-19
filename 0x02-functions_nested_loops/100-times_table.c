@@ -20,7 +20,6 @@ void print_times_table(int n)
 		}
 	}
 	else
-		break;
 }
 /**
  * putformat - formatted characters to output
