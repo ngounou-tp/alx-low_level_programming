@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int i = 0, j = 1, n;
+	int i = 0, j = 1, k, n;
 
 	printf("%d", i);
 	putchar(',');
@@ -15,7 +15,8 @@ int main(void)
 	printf("%d", j);
 	putchar(',');
 	putchar(' ');
-	while (n <= 50)
+	k = 2;
+	while (k <= 50)
 	{
 		n = i + j;
 		printf("%d", n);
@@ -23,6 +24,7 @@ int main(void)
 		putchar(' ');
 		i = j;
 		j = n;
+		k++;
 	}
 	putchar('\n');
 
