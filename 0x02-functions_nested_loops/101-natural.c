@@ -14,6 +14,7 @@ int main(void)
 		if ((j * i % 3) == 0)
 			k = k + j ;
 		i++;
+		j++;
 	}
 	printf("%d", k);
 
