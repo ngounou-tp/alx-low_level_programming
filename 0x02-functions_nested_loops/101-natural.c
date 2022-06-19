@@ -12,7 +12,7 @@ int main(void)
 	while (i < 1024)
 	{
 		if ((j * i % 3) == 0 || (j * i % 5) == 0)
-			k = k + j ;
+			k = k + j;
 		i++;
 		j++;
 	}
