@@ -16,7 +16,7 @@ int main(void)
 	putchar(',');
 	putchar(' ');
 	k = 2;
-	while (k <= 50)
+	while (k <= 51)
 	{
 		n = i + j;
 		printf("%d", n);
