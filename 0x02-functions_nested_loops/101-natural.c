@@ -11,7 +11,7 @@ int main(void)
 
 	while (i < 1024)
 	{
-		if (j * i % 3 == 0)
+		if (`(j * i % 3) == 0)
 			k = k + j ;
 		i++;
 	}
