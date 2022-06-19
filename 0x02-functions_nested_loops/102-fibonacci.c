@@ -7,24 +7,21 @@
  */
 int main(void)
 {
-	int i = 0, j = 1, k, n;
-
-	printf("%d", i);
-	putchar(',');
-	putchar(' ');
-	printf("%d", j);
-	putchar(',');
-	putchar(' ');
-	k = 2;
+	int i = 0, j = 1, k =0, n;
 	while (k <= 50)
 	{
-		n = i + j;
-		i = j;
-		j = n;
-		k++;
-		printf("%d", n);
-		putchar(',');
-		putchar(' ');
+		if (k == 50)
+			printf("%d", n);
+		else
+		{
+			n = i + j;
+			i = j;
+			j = n;
+			k++;
+			printf("%d", n);
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 
