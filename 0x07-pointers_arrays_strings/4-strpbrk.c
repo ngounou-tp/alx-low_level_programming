@@ -16,18 +16,18 @@ char *_strpbrk(char *s, char *accept)
 
 	while (*s)
 	{
-		i = 0;
+		int i = 0;
 		while (*accept)
 		{
 			if (*s == *accept)
 			{
 				b = s;
-				i = 1;
-				break;
+				i++;
 			}
 			accept++;
 		}
 		s++;
+		accept = a;
 		if (i == 0)
 			break;
 	}
