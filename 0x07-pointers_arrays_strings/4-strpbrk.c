@@ -28,7 +28,7 @@ char *_strpbrk(char *s, char *accept)
 			accept++;
 		}
 		s++;
-		if (i == 1)
+		if (i == 0)
 			break;
 	}
 
