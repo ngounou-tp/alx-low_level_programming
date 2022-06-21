@@ -4,7 +4,7 @@
  * _memcpy: copy the  n bits of a given memory adress
  * @dest: the memory adres to which we copy
  * @src: the memory address from which we copy
- * @n: n bits to be copied
+ * @n: unsigned interrger bits to be copied
  * Description: copy the n bits of src to dest
  * Return: the address of dest
  */
@@ -18,6 +18,6 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		dest++;
 		src++;
 	}
-	
+
 	return (c);
 }
