@@ -12,26 +12,27 @@ unsigned int _strspn(char *s, char *accept)
 {
 	int i = 0, j;
 	char *a = accept;
-	 while (*s)
-	 {
-		 j = 0;
-		 while(*accept)
-		 {
-			 if (*s == *accept)
-			 {
-				 i++;
-				 j = 1;
-				 break;
-			 }
-			 accept++;
-		 }
-		 s++;
-		 accept = a;
-		 if (j == 0)
-			 break;
-	 }
 
-	 return (i);
+	while (*s)
+	{
+		j = 0;
+		while(*accept)
+		{
+			if (*s == *accept)
+			{
+				i++;
+				j = 1;
+				break;
+			}
+			accept++;
+		}
+		s++;
+		accept = a;
+		if (j == 0)
+			break;
+	}
+	
+	return (i);
 
 
 }
