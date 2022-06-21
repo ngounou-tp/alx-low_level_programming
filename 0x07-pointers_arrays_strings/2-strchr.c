@@ -1,3 +1,5 @@
+#include<stddef.h>
+
 /**
  * _strchr - find a character in a string
  * @s: input string
