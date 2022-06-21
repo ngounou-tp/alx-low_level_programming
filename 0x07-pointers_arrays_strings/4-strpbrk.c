@@ -5,7 +5,7 @@
  * _strpbrk - tested my main.c file
  * @s: input string
  * @accept: input string
- * Description:  function locates the first occurrence in the 
+ * Description:  function locates the first occurrence in the
  * string s of any of the bytes in the string accept
  * Return: a pointer to the byte in s that matches one of the bytes in accept
  */
@@ -22,13 +22,13 @@ char *_strpbrk(char *s, char *accept)
 			if (*s == *accept)
 			{
 				b = s;
-				i++;
+				i = 1;
+				break;
 			}
 			accept++;
 		}
 		s++;
-		accept = a;
-		if (i == 0)
+		if (i == 1)
 			break;
 	}
 
