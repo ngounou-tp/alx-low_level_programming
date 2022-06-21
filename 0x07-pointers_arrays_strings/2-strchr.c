@@ -8,22 +8,16 @@
  * Return: a poiner to that first  occurence
  */
 char *_strchr(char *s, char c)
-{
-	int i = 0, j = 0;
-	
-	while(*s != '\0')
-	{
-		i++;
-		s++;
-	}
-	i++;
-	while (j <= i)
+{	
+	while(*s)
 	{
 		if (c == *s)
 			return (s);
 		s++;
 	}
-	
+
+	if (c == *s)
+		return (s);
 	return (NULL);
 }
 
