@@ -11,26 +11,19 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
-	char *a = accept, *b = NULL;
+	char *a = accept;
 
 	while (*s)
 	{
-		int i = 0;
 		while (*accept)
 		{
 			if (*s == *accept)
-			{
-				b = s;
-				i++;
-			}
+				return (s);
 			accept++;
 		}
 		s++;
 		accept = a;
-		if (i == 0)
-			break;
 	}
 
-	return (b);
+	return (NULL);
 }
