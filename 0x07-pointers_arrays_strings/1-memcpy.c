@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /**
- * _memcpy: copy the  n bits of a given memory adress
+ * _memcpy - copy the  n bits of a given memory adress
  * @dest: the memory adres to which we copy
  * @src: the memory address from which we copy
  * @n: unsigned interrger bits to be copied
