@@ -7,15 +7,14 @@
  * Return: nothing
  */
 void _print_rev_recursion(char *s)
-{
-	char c = *s;
+{	
+	char *c;
 
-	if (*s == c)
+	if (*s != '\0')
 	{
-		_putchar(c);
-		return;
+		_print_rev_recursion(s);
+		s++;
 	}
 	s--;
-	_putchar(*s);
-	_print_rev_recursion(s);
+	_putchar(*s);	
 }
