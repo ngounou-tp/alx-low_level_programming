@@ -2,19 +2,18 @@
 
 /**
  * _strlen_recursion - calcult thre length of a string
- * @s: input string
+ * @s: input stiring
  * Description: calculte string length of s
  * Return: integer
  */
 int _strlen_recursion(char *s)
 {
-	int i = 0;
+	int i;
 
 	if (*s)
-	{
-		i++;
-		_strlen_recursion(s + 1);
-	}
+		i = 1 + _strlen_recursion(s + 1);
+	else
+		i = 0;
 
 	return (i);
 }
