@@ -1,4 +1,4 @@
-#include<main.h>
+#include "main.h"
 
 /**
  * _puts_recursion - write a string
@@ -12,6 +12,7 @@ void _puts_recursion(char *s)
 	{
 		_putchar('\n');
 		return;
+	}
 	_putchar(*s);
 	_puts_recursion(s++);
 }
