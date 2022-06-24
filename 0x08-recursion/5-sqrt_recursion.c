@@ -3,7 +3,7 @@
 /**
  * _sqrt_recursion - calculate natural squqre root
  * @n: input integer
- * Description: a function that returns 
+ * Description: a function that returns
  * the natural square root of a number.
  * Return: interger
  */
@@ -26,8 +26,7 @@ int _sqrt(int prev, int root)
 {
 	if (prev > root)
 		return (-1);
-	else
-		if (prev * prev == root)
+	if (prev * prev == root)
 			return (prev);
 	return (_sqrt(prev + 1, root));
 }
