@@ -1,5 +1,8 @@
 #include "main.h"
 
+int _strlen_recursion(char *s);
+int helper_palindrome(char *s, int len);
+
 /**
  * is_palindrome - check if a string is a palyndrome
  * @s: input string
@@ -8,9 +11,9 @@
  */
 int is_palindrome(char *s)
 {
-	int n;
+	int len;
 
-	l = _strlen_recursion(s);
+	len = _strlen_recursion(s);
 	if (len <= 1)
 		return (1);
 	return (helper_palindrome(s, len));
@@ -40,8 +43,7 @@ int helper_palindrome(char *s, int len)
 {
 	if (len <= 1)
 		return (1);
-	else if (*s == *(s + len - 1))
+	if (*s == *(s + len - 1))
 		return (helper_palindrome(s + 1, len - 2));
-	else
-		return (0);
+	return (0);
 }
