@@ -13,10 +13,6 @@ char *str_concat(char *s1, char *s2)
 	int i = 0, j = 0, k = 0;
 	char *b = s1, *c = s2, *p, *e;
 
-	if (s1 == NULL)
-		i = 1;
-	if (s2 == NULL)
-		j = 1;
 	while (*s1)
 	{
 		i++;
@@ -35,13 +31,13 @@ char *str_concat(char *s1, char *s2)
 	e = p;
 	if (p)
 	{
-		while (s1)
+		while (*s1)
 		{
 			*p = *s1;
 			s1++;
 			p++;
 		}
-		while (s2)
+		while (*s2)
 		{
 			*p = *s2;
 			s2++;
