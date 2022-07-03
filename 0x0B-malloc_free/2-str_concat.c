@@ -14,14 +14,15 @@ char *str_concat(char *s1, char *s2)
 	char *b = s1, *c = s2, *p, *e;
 
 	if (s1 == NULL)
-		return s2;
+		i = 1;
 	if (s2 == NULL)
-		return s1;
+		j = 1;
 	while (*s1)
 	{
 		i++;
 		s1++;
 	}
+	i++;
 	s1 = b;
 	while (*s2)
 	{
@@ -35,20 +36,17 @@ char *str_concat(char *s1, char *s2)
 	e = p;
 	if (p)
 	{
-		while (*s1 != '\0')
+		while (*s1)
 		{
 			*p = *s1;
 			p++;
 			s1++;
 		}
-		p++;
-		while (*s2 != '\0')
+		while (*s2)
 		{
-			*p = *s2;
-			p++;
+			*p++ = *s2;
 			s2++;
 		}
-		*p++ = '\0';
 		return (e);
 	}
 	return (NULL);
