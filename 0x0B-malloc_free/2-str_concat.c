@@ -10,7 +10,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0, j = 0, k = 0;
+	int i = 0, j = 0, k = 0, w;
 	char *b = s1, *c = s2, *p, *e;
 
 	if (s1 == NULL)
@@ -29,11 +29,19 @@ char *str_concat(char *s1, char *s2)
 	e = p;
 	if (p)
 	{
-		while (*s1)
-			*p++ = *s1++;
-		while (*s2)
-			*p++ = *s2++;
-		return (e);
+		for (w = 0; w < k; k++)
+		{
+			if (i < k)
+			{
+				p[w] = *s1;
+				s1++;
+			}
+			else
+			{
+				p[w] = *s2;
+				s2++;
+			}
+		}
 	}
 	return (NULL);
 	free(p);
