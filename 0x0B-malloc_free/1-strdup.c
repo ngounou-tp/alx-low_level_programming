@@ -5,16 +5,16 @@
 /**
  * _strdup - creates a copy of a string
  * @str: input string
- * return: pointer to the string duplicated
+ * Return: pointer to the string duplicated
  */
 char *_strdup(char *str)
 {
 	int i = 0, j;
 	char *b = str, *c, *p;
-
+	
 	if (str == NULL)
 		return (NULL);
-	while (*str)
+	while (str)
 	{
 		i++;
 		str++;
@@ -34,6 +34,6 @@ char *_strdup(char *str)
 			return (NULL);
 	}
 	return (c);
-       	free(p);
+	free(p);
 }
 
