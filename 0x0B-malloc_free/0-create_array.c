@@ -19,7 +19,7 @@ char *create_array(unsigned int size, char c)
 	if (p)
 	{
 		r = p;
-		for(i = 0; i < size; i++)
+		for (i = 0; i < size; i++)
 		{
 			*p = c;
 			p++;
@@ -27,6 +27,6 @@ char *create_array(unsigned int size, char c)
 		return (r);
 	}
 	return (NULL);
-	
+
 	free(p);
 }
