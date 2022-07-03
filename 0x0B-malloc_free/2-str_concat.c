@@ -31,22 +31,26 @@ char *str_concat(char *s1, char *s2)
 	e = p;
 	if (p)
 	{
-		while (*s1)
+		if (s1 != NULL && s2 != NULL)
 		{
-			*p = *s1;
-			s1++;
-			p++;
+			while (*s1)
+				*p++ = *s1++;
+			while (*s2)
+				*p++ = *s2++;
 		}
-		while (*s2)
+		if (s1 == NULL)
 		{
-			*p = *s2;
-			s2++;
-			p++;
+			while (*s2)
+				*p++ = *s2++;
 		}
+		if (s2 == NULL)
+		{
+			while (*s1)
+				*p++ = *s1++;
+		}
+		
 		return (e);
 	}
 	return (NULL);
 	free(p);
 }
-
-
