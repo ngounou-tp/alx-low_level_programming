@@ -9,13 +9,7 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	char c;
-	while (name)
-	{
-		c = *name;
-		_putchar(c);
-		name++;
-	}
-
-	(*f)(* char) = &print_name;
+	if (name == NULL || f == NULL)
+		return();
+	f(name);
 }
