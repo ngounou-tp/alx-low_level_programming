@@ -1,6 +1,6 @@
 #include "variatic_functions.h"
-#include<stdio.h>
 #include<stdarg.h>
+#include<stdio.h>
 
 /**
  * sum_them_ - function that print the sum of it argument
