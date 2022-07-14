@@ -3,9 +3,9 @@
 #include<stdio.h>
 
 /**
- * variadic_functions.h - calculate the sum of parameters
+ * sum_them_all - calculate the sum of parameters
  * @n: input interger ,number of argument
- * ...: other arguments
+ * @...: other arguments
  * Return: sum of arguments
  */
 int sum_them_all(const unsigned int n, ...)
