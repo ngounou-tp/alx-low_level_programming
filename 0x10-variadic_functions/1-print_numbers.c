@@ -5,7 +5,7 @@
 
 /**
  * print_numbers - prints numbers
- * @seperator: pointer to a charactar seperator
+ * @separator: pointer to a charactar seperator
  * @n: number of int
  * @...: other arguments
  * Return: nothing
