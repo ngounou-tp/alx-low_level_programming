@@ -1,10 +1,11 @@
 #include "main.h"
-#include <sys/type.h>
+#include <sys/types.h>
 #include <sys/stat.h>
 #include <sys/uio.h>
 #include <unistd.h>
 #include <fcnt1.h>
 #include <stdlib.h>
+#include <stddef.h>
 
 /**
  * read_textfile - read a text file
