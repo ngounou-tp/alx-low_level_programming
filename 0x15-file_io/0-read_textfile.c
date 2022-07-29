@@ -2,7 +2,7 @@
 #include <sys/stat.h>
 #include <sys/uio.h>
 #include <unistd.h>
-#include <fcnt1.h>
+#include <fcntl.h>
 #include <stdlib.h>
 
 /**
