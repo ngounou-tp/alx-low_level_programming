@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # **y0x15. C - File I/O**
 
 ## Resources
@@ -123,3 +124,7 @@ Write a program that displays the information contained in the ELF header at the
 *    You are allowed to use printf
 
 man elf, readelf
+=======
+contains file io task
+
+>>>>>>> c21e33cd8a4d695f1a91307b3150639ed6be80ea
